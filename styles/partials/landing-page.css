@@ -134,13 +134,16 @@
         /* flex pois o display foi colocado em flex: vai ser justificado no inicio do flex*/
         justify-content: flex-start;
         margin:0;
-    
+        position: relative;
+        top: -40px;
     }
     .total-connections {
         grid-area: texting;
         /* vai justificar no fim do grid */
         justify-self: end;
         font-size: 1.2rem;
+        position: relative;
+        top: -40px;
     }
 
 }
