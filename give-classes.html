@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffy | Sua plataforma de estudos online </title>
 </head>
-<body id="give-classes"></body>
+<body id="page-give-classes"></body>
     <div id="container">
         <header class="page-header">
             <div class="top-bar-container">
@@ -21,17 +21,17 @@
             </div>
             <div class="header-content">
                 <strong>Que incrível que você quer dar aulas!</strong>
-                <p>O primeiro passo, é preencher esse formulário de inscrição:</p>
+                <p>O primeiro passo, é preencher esse formulário de inscrição</p>
             </div>
 
         </header>
             <main>
-                <form action="" id="create-classe">
+                <form action="" id="create-class">
                     <fieldset>
-                        <legend>Seus dados</legend>
+                        <legend id="seusdados">Seus dados</legend>
                         <div class="input-block">
                             <label for="name">Nome Completo</label>
-                            <input for="name" id="name required">
+                            <input for="name" id="name" required>
                         </div>
                         <div class="input-block">
                             <label for="avatar"> Link da sua foto <small>(comece com https://)</small></label>
@@ -44,11 +44,109 @@
                         <div class="textarea-block">
                             <label for="bio">Biografia</label>
                             <textarea name="bio" id="bio" required></textarea>
+                        </div>             
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="legenda">Sobre a aula</legend>
+                        <div class="select-block">
+                            <label for="subject">Matéria dada</label>
+                            <select name="subject" id="subject" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ciências</option>
+                                <option value="4">Educação física</option>
+                                <option value="5">Física</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">História</option>
+                                <option value="8">Matemática</option>
+                                <option value="9">Português</option>
+                                <option value="10">Química</option>
+                            </select>
                         </div>
+                        <div class="input-block">
+                            <label for="cost">Custo da sua hora/aula
+                                <small>(R$)</small>
+                            </label>
+                            <input type="cost" id="cost" type="number">
+                        </div>
+                    </fieldset>
                     
+                    <fieldset>
+                        <legend class="legenda">Horários disponíveis
+                            <button id="add-time">+ Novo Horário</button>
+                        </legend>
+
+                        <div class="schedule-item">
+                            <div class="select-block">
+                                <label for="weekday">Dia da semana</label>
+                                <select name="weekday[]" >
+                                    <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                    <option value="0">Domingo</option>
+                                    <option value="1">Segunda-feira</option>
+                                    <option value="2">Terça-feira</option>
+                                    <option value="3">Quarta-feira</option>
+                                    <option value="4">Quinta-feira</option>
+                                    <option value="5">Sexta-feira</option>
+                                    <option value="6">Sábado</option>
+                                </select>
+                            </div>
+                            <div class="input-block">
+                                <label for="time_from">Das</label>
+                                <input type="time" name="time_from[]" required>
+                            </div>
+
+                            <div class="input-block">
+                                <label for="time_to">Até</label>
+                                <input type="time" name="time_to[]" required>
+                            </div>
+                        </div>
+
+                            <!-- -->
+                            <div class="schedule-item">
+                                <div class="select-block">
+                                    <label for="weekday">Dia da semana</label>
+                                    <select name="weekday[]" >
+                                        <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                        <option value="0">Domingo</option>
+                                        <option value="1">Segunda-feira</option>
+                                        <option value="2">Terça-feira</option>
+                                        <option value="3">Quarta-feira</option>
+                                        <option value="4">Quinta-feira</option>
+                                        <option value="5">Sexta-feira</option>
+                                        <option value="6">Sábado</option>
+                                    </select>
+                                </div>
+                                <div class="input-block">
+                                    <label for="time_from">Das</label>
+                                    <input type="time" name="time_from[]" required>
+                                </div>
+    
+                                <div class="input-block">
+                                    <label for="time_to">Até</label>
+                                    <input type="time" name="time_to[]" required>
+                                </div>
+                            <!--  -->
+
+                        </div>
                     </fieldset>
                 </form>
 
+                <footer>
+                    <p>
+                        <img src="/images/icons/warning.svg" alt="Aviso importante">
+                        Importante!<br>
+                        Preencha todos os dados
+                    </p>
+                    <!-- Quando um submit está dentro do form ele faz o papel de enviar os dados
+                        Como nesse caso por causa do layout tivemos que deixar fora do form
+                        criamos um id para ele e colocamos com o seguinte atributo dentro do butto submit
+                        form="id-doform"
+                    -->
+                    <button type="submit" form="create-class">Salvar cadastro</button>
+                </footer>
             </main>
+        </div>
 </body>
 </html>

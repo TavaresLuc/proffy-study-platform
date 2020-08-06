@@ -1,5 +1,6 @@
 .input-block input,
-.select-block select{
+.select-block select,
+.textarea-block textarea {
     width: 100%;
     height: 5.6rem;
     margin-top: 0.8rem;
@@ -12,17 +13,27 @@
     font: 1.6rem Archivo;
 }
 
+.textarea-block textarea {
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+
+    resize: vertical;
+}
+
 .select-block label,
-.input-block label {
+.input-block label,
+.textarea-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
 }
 
-.input-block{
+.input-block,
+.textarea-block{
     position:relative;
 }
 /* quando eu estiver clicado no input (em foco) */
-.input-block:focus-within:after {
+.input-block:focus-within::after,
+.textarea-block:focus-within::after {
     /* cálculo de largura: pega os 100% do elemento e subtrai 3.2rem */
 width: calc(100% - 3.2rem);
 height: 2px;
