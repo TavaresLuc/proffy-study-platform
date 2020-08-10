@@ -99,6 +99,14 @@
 }
 
 @media (min-width:1100px){
+
+    :root {
+        font-size: 50%
+    }
+
+    .imagem-principal { 
+        height: 45rem;
+    }
     #landing-page #container {
         max-width: 1100px;
         display: grid;

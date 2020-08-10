@@ -1,0 +1,16 @@
+@media (max-width: 699px) {
+    :root {
+        font-size: 40%;
+    }
+    #succes-page {
+        background: var(--color-primary-dark);
+    }
+    .imagem {
+    
+        background: url("/images/success-background.svg")
+    }
+
+    .texto {
+        position: absolute;
+    }
+}
