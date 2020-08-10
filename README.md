@@ -7,3 +7,5 @@ Servidor: JavaScript, node.</br>
 Banco de dados: SQLite</br></strong>
 
 Ainda em construção.
+
+:open_file_folder: How to open: Download all the files - type npm run dev on git bash and go to http://127.0.0.1:5500/
