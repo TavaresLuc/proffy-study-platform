@@ -8,4 +8,4 @@ Banco de dados: SQLite</br></strong>
 
 Ainda em construção.
 
-:open_file_folder: How to open: Download all the files - type npm run dev on git bash and go to http://127.0.0.1:5500/
+:open_file_folder: How to open w/ server and database: You will need NodeJs, git bash and Npm. Download all the files - type npm run dev on git bash and go to http://127.0.0.1:5500/
