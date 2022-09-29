@@ -1,11 +1,24 @@
 # proffy-study-platform
 
-Plataforma de estudos feita durante a Next Level Week com design totalmente responsivo.
+<h2>🚀 Tecnologias </h2>
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-<strong>Aplicação Web: HTML5, CSS3 e JavaScript.</br>
-Servidor: JavaScript, node.</br>
-Banco de dados: SQLite</br></strong>
+- [Node.js]
+- [JavaScript
+- [SQLite]
+- [HTML5]
+- [CSS3]
 
-Ainda em construção.
+<h2>💻 Projeto</h2>
+O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores online.
 
-:open_file_folder: How to open w/ server and database: You will need NodeJs, git bash and Npm. Download all the files - type npm run dev on git bash and go to http://127.0.0.1:5500/
+<h2>🔖 Layout</h2>
+Nos links abaixo você encontra o layout do projeto web. Lembrando que você precisa ter uma conta no Figma para acessá-lo.
+
+- [Layout Web][layoutweb]
+
+<h2>📝 Licença</h2>
+Esse projeto não possui licenças.
+
+
+[layoutweb]: https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web?node-id=0%3A1
